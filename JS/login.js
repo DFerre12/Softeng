@@ -1,8 +1,8 @@
 'use strict';
 //Name input box
-let uName = document.getElementById('uName');
+const uName = document.getElementById('uName');
 //Password input box
-let pwd = document.getElementById('pwd');
+const pwd = document.getElementById('pwd');
 
 //For testing purposes only - not final code
 function checkCred() {

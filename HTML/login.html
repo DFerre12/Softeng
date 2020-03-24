@@ -26,20 +26,22 @@
 
     <body>
         
-        <img src="../Img/logo.png" id="logo" alt="Vybility logo">
+        <form class="container">
+            <img src="../Img/logo.png" id="logo" alt="Vybility logo">
 
-        <input type="text" class="textBox" placeholder="Username" id="uName">
+            <input type="text" class="textBox" placeholder="Username" id="uName">
 
-        <input type="password" class="textBox" placeholder="Password" id="pwd">
+            <input type="password" class="textBox" placeholder="Password" id="pwd">
 
-        <input type="checkbox" id="remember" name="remember">
-        <label for="remember">Remember me</label>
+            <input type="checkbox" id="remember" name="remember">
+            <label for="remember">Remember me</label>
 
-        <button class="wideBtn" onclick="checkCred()">Log in</button>
-        <div id="noAcc">
-            <p>Don't have an account?</p>
-            <a href="?"><button id="signUp">Sign up</button></a>
-        </div>
+            <button class="wideBtn" onclick="checkCred()">Log in</button>
+            <div id="noAcc">
+                <p>Don't have an account?</p>
+                <a href="?"><button id="signUp">Sign up</button></a>
+            </div>
+        </form>
     </body>
 
     <script src="../JS/login.js"></script>

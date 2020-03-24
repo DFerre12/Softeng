@@ -27,36 +27,21 @@
 </head>
 
 <body>
-    <img src="../Img/logo.png" id="logo" alt="Vybility logo">
-
     <form class="container">
-        <label for="first">First Name</label>
-        <input class="textBox" id="firstName" type="text" name="first" placeholder="First" required>
-        <label for="Last">Last Name</label>
-        <input name="Last Name" id="lastName"class="textBox" type="text" required placeholder="Last">
+
+        <img src="../Img/logo.png" id="logo" alt="Vybility logo">
     
-    <div>
-        <label for="username">
-            Username:
-            <input name="Username" id="uName" class="textBox" type="username" required placeholder="Username" >
-        </label>
-    </div>
-    
-    <div>
-        <label for="email">
-        Email:
-            <input name="Email" class="textBox" id="email" type="email" required placeholder="Email">
-        </label>
+        <input class="textBox" id="firstName" type="text" name="first" placeholder="First name" required>
         
-        <label for="pwd">
-        Password:
-            <input name="Password" class="textBox" id="pwd" type="password" pattern=".{5,10}" required title="5 to 10 characters" placeholder="Password">
-        </label>
-        <label for="pwd-check">
-        Confirm Password:
-            <input name="Password" class="textBox" id="pwd-check" type="password" pattern=".{5,10}" required title="5 to 10 characters" placeholder="Confirm Password">
-        </label>    
-    </div>
+        <input name="Last Name" id="lastName"class="textBox" type="text" placeholder="Last name" required>
+    
+        <input name="Username" id="uName" class="textBox" type="username" required placeholder="Username" >
+    
+        <input name="Email" class="textBox" id="email" type="email" required placeholder="Email">
+
+        <input name="Password" class="textBox" id="pwd" type="password" pattern=".{5,10}" required title="5 to 10 characters" placeholder="Password">
+        
+        <input name="Password" class="textBox" id="pwd-check" type="password" pattern=".{5,10}" required title="5 to 10 characters" placeholder="Confirm Password">
     
     <div>
         <label>
@@ -85,12 +70,13 @@
 
     <button class="wideBtn" onclick="passCred()">Register</button>
 
-</form>
+
     <div id="Acc">
-        <p>Already have an account? Sing in!</p>
+        <p>Already have an account? Sign in!</p>
         <a href="login.html"><button id="signIn" class="wideBtn">Login</button></a>
     </div>
 </div>
+</form>
 
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.js"></script>
 <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>

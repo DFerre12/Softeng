@@ -2,11 +2,28 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <title>Vybility | New Playlist</title>
+    <link rel="apple-touch-icon" sizes="57x57" href="../Img/icons/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="../Img/icons/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="../Img/icons/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="../Img/icons/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="../Img/icons/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="../Img/icons/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="../Img/icons/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="../Img/icons/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="../Img/icons/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="../Img/icons/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../Img/icons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="../Img/icons/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../Img/icons/favicon-16x16.png">
+        <link rel="manifest" href="../Img/icons/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="../Img/icons/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="Affordable and professional web design">
 	  <meta name="keywords" content="web design, affordable web design, professional web design">
   	<meta name="author" content="Brad Traversy">
-    <title>Vybility | New Playlist</title>
     <link rel="stylesheet" href="../css/style1.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <script src="https://code.jquery.com/jquery-3.4.1.slim.js" integrity="sha256-BTlTdQO9/fascB1drekrDVkaKd9PkwBymMlHOiG+qLI=" crossorigin="anonymous"></script>
@@ -34,22 +51,28 @@
     <div class="row">
       <div class="col-lg-12">
 
-        <div class="container">
-          <h1 class="page-title">Quiz</h1>
+        <h1 class="page-title">Quiz</h1>
+
+        <div id="quiz">
+          <h2>How are you feeling right now?</h2>
+          <button class="wideBtn" id="happyQuiz">Happy</button>
+          
+          <button class="wideBtn" id="sadQuiz">Sad</button>
+
+          <button class="wideBtn" id="loveQuiz">In love</button>
+
         </div>
-
-        <div id="quiz"></div>
         <button  id="submit" type="button" class="btn btn-primary">Primary</button>
-        <div id="results"></div>
 
-        Link to how to create quiz: https://www.sitepoint.com/simple-javascript-quiz/ 
+        <!Link to how to create quiz: https://www.sitepoint.com/simple-javascript-quiz/>
     
+      </div>
     </div>
-  </div>
   </div>
 
     <footer>
       <p>Team3C, Copyrights &copy; 2020</p>
     </footer>
   </body>
+  <script src="../JS/quiz.js"></script>
 </html>
