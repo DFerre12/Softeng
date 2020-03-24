@@ -1,7 +1,7 @@
 create table HappySong(
     song_id serial primary key,
     song_name varchar(100) not null,
-	  artist_name varchar(50) not null
+    artist_name varchar(50) not null
 );
 
 insert into HappySong(song_id, song_name, artist_name) values (default, 'Happy', 'Pharrell Williams');
@@ -10,9 +10,9 @@ insert into HappySong(song_id, song_name, artist_name) values (default, 'Uptown 
 
 
 create table SadSong(
-	   song_id serial primary key,
-	   song_name varchar(100) not null,
-	   artist_name varchar(50) not null
+     song_id serial primary key,
+     song_name varchar(100) not null,
+     artist_name varchar(50) not null
 );
 
 insert into SadSong(song_id, song_name, artist_name) values (default, 'Sad Song', 'We The Kings, Elena Coats');
@@ -21,9 +21,9 @@ insert into SadSong(song_id, song_name, artist_name) values (default, 'How to Sa
 
 
 create table LoveSong(
-    	song_id serial primary key,
-	    song_name varchar(100) not null,	
-      artist_name varchar(50) not null
+     song_id serial primary key,
+     song_name varchar(100) not null,	
+     artist_name varchar(50) not null
 );
 
 insert into LoveSong(song_id, song_name, artist_name) values (default, 'All of Me', 'John Legend');
