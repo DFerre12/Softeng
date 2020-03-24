@@ -1,12 +1,21 @@
+
 create table Happy(
 	song_id serial primary key,
 	song_name varchar(100) not null
-	
 );
+
+
 
 
 create table Sad(
 	song_id serial primary key,
 	song_name varchar(100) not null
-	
+);
+
+
+
+
+create table Love(
+	song_id serial primary key,
+	song_name varchar(100) not null
 );
