@@ -1,0 +1,33 @@
+
+
+
+insert into HappySong(song_id, song_name, artist_name) values (default, 'Best Life', 'Hardy Caprio, One Acen');
+insert into HappySong(song_id, song_name, artist_name) values (default, 'Djadja',' Aya Nakamura, Afro B');
+insert into HappySong(song_id, song_name, artist_name) values (default, 'Danza Kuduro','Don Omar, Lucenzo';
+insert into HappySong(song_id, song_name, artist_name) values (default, 'Taki Taki', 'DJ Snake');
+insert into HappySong(song_id, song_name, artist_name) values (default, 'Good Life', 'Kehlani');
+insert into HappySong(song_id, song_name, artist_name) values (default, 'Lets shut up and Dance','Jason Derulo,LAY, NCT 127');
+insert into HappySong(song_id, song_name, artist_name) values (default, 'Anywhere', 'Rita Ora');
+
+
+
+
+
+insert into SadSong(song_id, song_name, artist_name) values (default, ' We don't talk anymore', 'Charlie Puth, Selena Gomez');
+insert into SadSong(song_id, song_name, artist_name) values (default, 'Let it go', 'James Bay');
+insert into SadSong(song_id, song_name, artist_name) values (default, 'When i'm gone', 'Eminem');
+insert into SadSong(song_id, song_name, artist_name) values (default, 'Faded', 'Alan Walker');
+insert into SadSong(song_id, song_name, artist_name) values (default, ' Tears in the ocean','Jay Sean');
+insert into SadSong(song_id, song_name, artist_name) values (default, 'Lonely' , 'Akon');
+insert into SadSong(song_id, song_name, artist_name) values (default, 'Airplanes', 'BoB, Hayley Williams');
+
+
+
+
+insert into LoveSong(song_id, song_name, artist_name) values (default, 'Like this', 'Jessica Mauboy');
+insert into LoveSong(song_id, song_name, artist_name) values (default, ' Love Story', 'TaylorSwift');
+insert into LoveSong(song_id, song_name, artist_name) values (default,'Teri Ore', 'Rahat Fateh Ali Khan');
+insert into LoveSong(song_id, song_name, artist_name) values (default, 'Luv', 'Tory Lanez'
+insert into LoveSong(song_id, song_name, artist_name) values (default, ' Marry Me', 'Thomas Rhett');
+insert into LoveSong(song_id, song_name, artist_name) values (default, 'BS','Jhene Aiko,HER');
+insert into LoveSong(song_id, song_name, artist_name) values (default, ' Love me like you do','Ellie Goulding');
