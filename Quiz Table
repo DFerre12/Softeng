@@ -1,0 +1,156 @@
+create table User(
+	user_id int primary key,
+	first_name varchar(20) not null,
+	last_name varchar(20) not null,
+	username varchar(30) unique,
+	email_address varchar(60) not null unique,
+	password varchar(20) not null,
+	dob date not null
+);
+
+
+create table Quiz_Happy(
+  question_happy_id int(30) not null,
+  question_happy varchar(100) null,
+  active_happy ENUM('0','1') not null
+);
+
+
+insert into Quiz_Happy ('question_happy_id','question_happy','active_happy') VALUES
+insert into Quiz_Happy ('question_happy_id','question_happy','active_happy') VALUES
+insert into Quiz_Happy ('question_happy_id','question_happy','active_happy') VALUES
+insert into Quiz_Happy ('question_happy_id','question_happy','active_happy') VALUES
+insert into Quiz_Happy ('question_happy_id','question_happy','active_happy') VALUES
+insert into Quiz_Happy ('question_happy_id','question_happy','active_happy') VALUES
+insert into Quiz_Happy ('question_happy_id','question_happy','active_happy') VALUES
+insert into Quiz_Happy ('question_happy_id','question_happy','active_happy') VALUES
+insert into Quiz_Happy ('question_happy_id','question_happy','active_happy') VALUES
+insert into Quiz_Happy ('question_happy_id','question_happy','active_happy') VALUES
+
+
+create table Quiz_Sad(
+  question_sad_id int(30) not null,
+  question_sad varchar(100) null,
+  active_sad ENUM('0','1') not null
+);
+
+
+insert into Quiz_Sad ('question_sad_id','question_sad','active_sad') VALUES
+insert into Quiz_Sad ('question_sad_id','question_sad','active_sad') VALUES
+insert into Quiz_Sad ('question_sad_id','question_sad','active_sad') VALUES
+insert into Quiz_Sad ('question_sad_id','question_sad','active_sad') VALUES
+insert into Quiz_Sad ('question_sad_id','question_sad','active_sad') VALUES
+insert into Quiz_Sad ('question_sad_id','question_sad','active_sad') VALUES
+insert into Quiz_Sad ('question_sad_id','question_sad','active_sad') VALUES
+insert into Quiz_Sad ('question_sad_id','question_sad','active_sad') VALUES
+insert into Quiz_Sad ('question_sad_id','question_sad','active_sad') VALUES
+insert into Quiz_Sad ('question_sad_id','question_sad','active_sad') VALUES
+
+
+create table Quiz_Love(
+  question_love_id int(30) not null,
+  question_love varchar(100) null,
+  active_love ENUM('0','1') not null
+);
+
+
+insert into Quiz_Love ('question_love_id','question_love','active_love') VALUES
+insert into Quiz_Love ('question_love_id','question_love','active_love') VALUES
+insert into Quiz_Love ('question_love_id','question_love','active_love') VALUES
+insert into Quiz_Love ('question_love_id','question_love','active_love') VALUES
+insert into Quiz_Love ('question_love_id','question_love','active_love') VALUES
+insert into Quiz_Love ('question_love_id','question_love','active_love') VALUES
+insert into Quiz_Love ('question_love_id','question_love','active_love') VALUES
+insert into Quiz_Love ('question_love_id','question_love','active_love') VALUES
+insert into Quiz_Love ('question_love_id','question_love','active_love') VALUES
+insert into Quiz_Love ('question_love_id','question_love','active_love') VALUES
+
+
+create table quiz_answers_happy (
+  username VARCHAR(16) REFERENCES users,
+  user_id int not null REFERENCES user(user_id),
+  question_happy_1 ENUM('YES', 'NO', 'I DONT KNOW'),
+  question_happy_2 ENUM('YES', 'NO', 'I DONT KNOW'),
+  question_happy_3 ENUM('YES', 'NO', 'I DONT KNOW'),
+  question_happy_4 ENUM('YES', 'NO', 'I DONT KNOW'),
+  question_happy_5 ENUM('YES', 'NO', 'I DONT KNOW'),
+  question_happy_6 ENUM('YES', 'NO', 'I DONT KNOW'),
+  question_happy_7 ENUM('YES', 'NO', 'I DONT KNOW'),
+  question_happy_8 ENUM('YES', 'NO', 'I DONT KNOW'),
+  question_happy_9 ENUM('YES', 'NO', 'I DONT KNOW'),
+  question_happy_10 ENUM('YES', 'NO', 'I DONT KNOW'),
+  submitted_at DATETIME,
+  PRIMARY KEY (username, submitted_at)
+);
+
+
+insert into quiz_answer_happy ('username',user_id,'question_happy_1','question_happy_2','question_happy_3','question_happy_4','question_happy_5',question_happy_6,question_happy_7,question_happy_8,question_happy_9,question_happy_10) VALUES
+insert into quiz_answer_happy ('username',user_id,'question_happy_1','question_happy_2','question_happy_3','question_happy_4','question_happy_5',question_happy_6,question_happy_7,question_happy_8,question_happy_9,question_happy_10) VALUES
+insert into quiz_answer_happy ('username',user_id,'question_happy_1','question_happy_2','question_happy_3','question_happy_4','question_happy_5',question_happy_6,question_happy_7,question_happy_8,question_happy_9,question_happy_10) VALUES
+insert into quiz_answer_happy ('username',user_id,'question_happy_1','question_happy_2','question_happy_3','question_happy_4','question_happy_5',question_happy_6,question_happy_7,question_happy_8,question_happy_9,question_happy_10) VALUES
+insert into quiz_answer_happy ('username',user_id,'question_happy_1','question_happy_2','question_happy_3','question_happy_4','question_happy_5',question_happy_6,question_happy_7,question_happy_8,question_happy_9,question_happy_10) VALUES
+insert into quiz_answer_happy ('username',user_id,'question_happy_1','question_happy_2','question_happy_3','question_happy_4','question_happy_5',question_happy_6,question_happy_7,question_happy_8,question_happy_9,question_happy_10) VALUES
+insert into quiz_answer_happy ('username',user_id,'question_happy_1','question_happy_2','question_happy_3','question_happy_4','question_happy_5',question_happy_6,question_happy_7,question_happy_8,question_happy_9,question_happy_10) VALUES
+insert into quiz_answer_happy ('username',user_id,'question_happy_1','question_happy_2','question_happy_3','question_happy_4','question_happy_5',question_happy_6,question_happy_7,question_happy_8,question_happy_9,question_happy_10) VALUES
+insert into quiz_answer_happy ('username',user_id,'question_happy_1','question_happy_2','question_happy_3','question_happy_4','question_happy_5',question_happy_6,question_happy_7,question_happy_8,question_happy_9,question_happy_10) VALUES
+insert into quiz_answer_happy ('username',user_id,'question_happy_1','question_happy_2','question_happy_3','question_happy_4','question_happy_5',question_happy_6,question_happy_7,question_happy_8,question_happy_9,question_happy_10) VALUES
+
+
+create table quiz_answers_sad (
+  username VARCHAR(16) REFERENCES users,
+  user_id int not null REFERENCES user(user_id),
+  question_sad_1 ENUM('YES', 'NO', 'I DONT KNOW'),
+  question_sad_2 ENUM('YES', 'NO', 'I DONT KNOW'),
+  question_sad_3 ENUM('YES', 'NO', 'I DONT KNOW'),
+  question_sad_4 ENUM('YES', 'NO', 'I DONT KNOW'),
+  question_sad_5 ENUM('YES', 'NO', 'I DONT KNOW'),
+  question_sad_6 ENUM('YES', 'NO', 'I DONT KNOW'),
+  question_sad_7 ENUM('YES', 'NO', 'I DONT KNOW'),
+  question_sad_8 ENUM('YES', 'NO', 'I DONT KNOW'),
+  question_sad_9 ENUM('YES', 'NO', 'I DONT KNOW'),
+  question_sad_10 ENUM('YES', 'NO', 'I DONT KNOW'),
+  submitted_at DATETIME,
+  PRIMARY KEY (username, submitted_at)
+);
+
+
+insert into quiz_answer_sad ('username',user_id,'question_sad_1','question_sad_2','question_sad_3','question_sad_4','question_sad_5',question_sad_6,question_sad_7,question_sad_8,question_sad_9,question_sad_10) VALUES
+insert into quiz_answer_sad ('username',user_id,'question_sad_1','question_sad_2','question_sad_3','question_sad_4','question_sad_5',question_sad_6,question_sad_7,question_sad_8,question_sad_9,question_sad_10) VALUES
+insert into quiz_answer_sad ('username',user_id,'question_sad_1','question_sad_2','question_sad_3','question_sad_4','question_sad_5',question_sad_6,question_sad_7,question_sad_8,question_sad_9,question_sad_10) VALUES
+insert into quiz_answer_sad ('username',user_id,'question_sad_1','question_sad_2','question_sad_3','question_sad_4','question_sad_5',question_sad_6,question_sad_7,question_sad_8,question_sad_9,question_sad_10) VALUES
+insert into quiz_answer_sad ('username',user_id,'question_sad_1','question_sad_2','question_sad_3','question_sad_4','question_sad_5',question_sad_6,question_sad_7,question_sad_8,question_sad_9,question_sad_10) VALUES
+insert into quiz_answer_sad ('username',user_id,'question_sad_1','question_sad_2','question_sad_3','question_sad_4','question_sad_5',question_sad_6,question_sad_7,question_sad_8,question_sad_9,question_sad_10) VALUES
+insert into quiz_answer_sad ('username',user_id,'question_sad_1','question_sad_2','question_sad_3','question_sad_4','question_sad_5',question_sad_6,question_sad_7,question_sad_8,question_sad_9,question_sad_10) VALUES
+insert into quiz_answer_sad ('username',user_id,'question_sad_1','question_sad_2','question_sad_3','question_sad_4','question_sad_5',question_sad_6,question_sad_7,question_sad_8,question_sad_9,question_sad_10) VALUES
+insert into quiz_answer_sad ('username',user_id,'question_sad_1','question_sad_2','question_sad_3','question_sad_4','question_sad_5',question_sad_6,question_sad_7,question_sad_8,question_sad_9,question_sad_10) VALUES
+insert into quiz_answer_sad ('username',user_id,'question_sad_1','question_sad_2','question_sad_3','question_sad_4','question_sad_5',question_sad_6,question_sad_7,question_sad_8,question_sad_9,question_sad_10) VALUES
+
+
+create table quiz_answers_love (
+  username VARCHAR(16) REFERENCES users,
+  user_id int not null REFERENCES user(user_id),
+  question_love_1 ENUM('YES', 'NO', 'I DONT KNOW'),
+  question_love_2 ENUM('YES', 'NO', 'I DONT KNOW'),
+  question_love_3 ENUM('YES', 'NO', 'I DONT KNOW'),
+  question_love_4 ENUM('YES', 'NO', 'I DONT KNOW'),
+  question_love_5 ENUM('YES', 'NO', 'I DONT KNOW'),
+  question_love_6 ENUM('YES', 'NO', 'I DONT KNOW'),
+  question_love_7 ENUM('YES', 'NO', 'I DONT KNOW'),
+  question_love_8 ENUM('YES', 'NO', 'I DONT KNOW'),
+  question_love_9 ENUM('YES', 'NO', 'I DONT KNOW'),
+  question_love_10 ENUM('YES', 'NO', 'I DONT KNOW'),
+  submitted_at DATETIME,
+  PRIMARY KEY (username, submitted_at)
+);
+
+
+insert into quiz_answer_love ('username',user_id,'question_love_1','question_love_2','question_love_3','question_love_4','question_love_5',question_love_6,question_love_7,question_love_8,question_love_9,question_love_10) VALUES
+insert into quiz_answer_love ('username',user_id,'question_love_1','question_love_2','question_love_3','question_love_4','question_love_5',question_love_6,question_love_7,question_love_8,question_love_9,question_love_10) VALUES
+insert into quiz_answer_love ('username',user_id,'question_love_1','question_love_2','question_love_3','question_love_4','question_love_5',question_love_6,question_love_7,question_love_8,question_love_9,question_love_10) VALUES
+insert into quiz_answer_love ('username',user_id,'question_love_1','question_love_2','question_love_3','question_love_4','question_love_5',question_love_6,question_love_7,question_love_8,question_love_9,question_love_10) VALUES
+insert into quiz_answer_love ('username',user_id,'question_love_1','question_love_2','question_love_3','question_love_4','question_love_5',question_love_6,question_love_7,question_love_8,question_love_9,question_love_10) VALUES
+insert into quiz_answer_love ('username',user_id,'question_love_1','question_love_2','question_love_3','question_love_4','question_love_5',question_love_6,question_love_7,question_love_8,question_love_9,question_love_10) VALUES
+insert into quiz_answer_love ('username',user_id,'question_love_1','question_love_2','question_love_3','question_love_4','question_love_5',question_love_6,question_love_7,question_love_8,question_love_9,question_love_10) VALUES
+insert into quiz_answer_love ('username',user_id,'question_love_1','question_love_2','question_love_3','question_love_4','question_love_5',question_love_6,question_love_7,question_love_8,question_love_9,question_love_10) VALUES
+insert into quiz_answer_love ('username',user_id,'question_love_1','question_love_2','question_love_3','question_love_4','question_love_5',question_love_6,question_love_7,question_love_8,question_love_9,question_love_10) VALUES
+insert into quiz_answer_love ('username',user_id,'question_love_1','question_love_2','question_love_3','question_love_4','question_love_5',question_love_6,question_love_7,question_love_8,question_love_9,question_love_10) VALUES 
