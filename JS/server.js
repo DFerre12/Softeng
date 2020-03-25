@@ -8,10 +8,10 @@ const session = require('express-session');
 const app = express();
 
 // Passport Config
-require('./config/passport')(passport);
+require('./js/passport')(passport);
 
 // DB Config
-const db = require('./config/keys').mongoURI;
+const db = require('./js/keys').mongoURI;
 
 // Connect to MongoDB
 mongoose
