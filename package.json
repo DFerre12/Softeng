@@ -1,21 +1,21 @@
 {
-  "name": "html",
+  "name": "vybility",
   "version": "1.0.0",
-  "description": "",
-  "main": "JS/server.js",
-  "scripts": {
-    "start": "node JS/server.js",
-    "devstart": "nodemon JS/server.js"
-  },
-  "author": "",
-  "license": "ISC",
+  "description": "Vybility ",
+  "main": "app.js",
   "dependencies": {
-    "ejs": "^3.0.1",
-    "express": "^4.17.1",
-    "pg": "^7.18.2"
+    "express-ejs-layouts": "^2.5.0"
   },
-  "devDependencies": {
-    "dotenv": "^8.2.0",
-    "nodemon": "^2.0.2"
-  }
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Vybility",
+    "music",
+    "mood",
+    "quiz"
+  ],
+  "author": "Team3C",
+  "license": "ISC"
 }
