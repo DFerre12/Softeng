@@ -16,88 +16,6 @@ loveBtn.addEventListener('click', function () {
 });
 
 //Arrays for questions
-const sadQuestions = [
-
-    {question: "Select the genres you prefer to listen to",
-
-    answers: {
-        a: "Pop",
-        b: "Hip Hop",
-        c: "RnB",
-        d: "Jazz",
-        e: "Electronic",
-        f:  "Rock"
-    }
-},
-    {question :"Would you like to listen to multicultural music?",
-    
-    answers: {
-        a: "Indian",
-        b: "Arab",
-        c: "Caribbean",
-        d: "Oriental",
-        e: "Not really my sort of thing"
-    }
-},
-
-    {question: "Do you prefer listening to music with bass?",
-
-    answers: {
-        a: "Yes",
-        b: "No"
-    }
-},
-
-    {question: "Select from the list what artists you like",
-
-    answers: {
-        a: "Bruno Mars",
-        b: "Pharell Williams",
-        c: "XXXTentacion"
-    }
-},
-
-    {question: "Do certain instruments change the emotion you are feeling?",
-
-    answers: {
-        a: "Yes",
-        b: "Not really"
-    }
-},
-
-    {question: "Do you think sad songs help you grow as a person?",
-    
-    answers: {
-        a: "Yes",
-        b: "No"
-    }
-},
-
-    {question: "Do you listen to the lyrics of the song and relate with artists? If so who?",
-
-    answers: {
-        a: "Yes",
-        b: "No"
-    }
-},
-
-    {question: "When you are sad do you listen to songs that relate to memory?",
-
-    answers: {
-        a: "Yes",
-        b: "no"
-    }
-},
-
-    {question: "When sad, do you ever find yourself listening to a track that you hate and makes you even more upset?",
-
-    answers: {
-        a: "Yes",
-        b: "No"
-    }
-},
-
-];
 
 const happyQuestions = [
     
@@ -181,6 +99,93 @@ const happyQuestions = [
 },
 
 ];
+
+
+
+const sadQuestions = [
+
+    {question: "Select the genres you prefer to listen to",
+
+    answers: {
+        a: "Pop",
+        b: "Hip Hop",
+        c: "RnB",
+        d: "Jazz",
+        e: "Electronic",
+        f:  "Rock"
+    }
+},
+    {question :"Would you like to listen to multicultural music?",
+    
+    answers: {
+        a: "Indian",
+        b: "Arab",
+        c: "Caribbean",
+        d: "Oriental",
+        e: "Not really my sort of thing"
+    }
+},
+
+    {question: "Do you prefer listening to music with bass?",
+
+    answers: {
+        a: "Yes",
+        b: "No"
+    }
+},
+
+    {question: "Select from the list what artists you like",
+
+    answers: {
+        a: "Bruno Mars",
+        b: "Pharell Williams",
+        c: "XXXTentacion"
+    }
+},
+
+    {question: "Do certain instruments change the emotion you are feeling?",
+
+    answers: {
+        a: "Yes",
+        b: "Not really"
+    }
+},
+
+    {question: "Do you think sad songs help you grow as a person?",
+    
+    answers: {
+        a: "Yes",
+        b: "No"
+    }
+},
+
+    {question: "Do you listen to the lyrics of the song and relate with artists? If so who?",
+
+    answers: {
+        a: "Yes",
+        b: "No"
+    }
+},
+
+    {question: "When you are sad do you listen to songs that relate to memory?",
+
+    answers: {
+        a: "Yes",
+        b: "no"
+    }
+},
+
+    {question: "When sad, do you ever find yourself listening to a track that you hate and makes you even more upset?",
+
+    answers: {
+        a: "Yes",
+        b: "No"
+    }
+},
+
+];
+
+
 
 const loveQuestions = [
 
@@ -267,10 +272,17 @@ const loveQuestions = [
 
 //Generates the quiz based on the user's mood
 function createQuiz(quiz) {
-    var quiz = document.getElementById('quiz');
+    var quizDiv = document.getElementById('quiz');
+    const quizBox = document.createElement('form');
     //Array for storing the user's answers
     const result = [];
 
-    quiz.appendChild(document.createElement('form'));
+    //Removes buttons from page
+    happyBtn.remove();
+    sadBtn.remove();
+    loveBtn.remove();
+
+    //Creates form for the quiz
+    quizDiv.appendChild(quizBox);
 
 }
