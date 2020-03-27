@@ -9,6 +9,14 @@ const { forwardAuthenticated } = require('../config/auth');
 //Quiz page
 router.get('/quiz',forwardAuthenticated, (req, res) => res.render('quiz'))
 
+
+//Result Page
+router.get('/result1',forwardAuthenticated, (req, res) => res.render('result1'))
+
+router.get('/result2',forwardAuthenticated, (req, res) => res.render('result2'))
+
+router.get('/result3',forwardAuthenticated, (req, res) => res.render('result3'))
+
 // Login Page
 router.get('/login', forwardAuthenticated, (req, res) => res.render('login'));
 

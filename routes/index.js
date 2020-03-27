@@ -12,12 +12,11 @@ router.get('/dashboard', ensureAuthenticated, (req, res) =>
   })
 );
 
-//Quiz
+//Quiz routes
 router.get('/quiz', ensureAuthenticated1, (req, res) => 
 res.render('quiz', {
   user: req.user
   })
 );
-
 
 module.exports = router;
