@@ -1,7 +1,5 @@
-# Softeng
-Hope not
+# Softeng - Vybility
 
-To do list:
-- Database
-- Quiz page
-- Edit playlist function
+                                          Installation:
+                                          
+                                          
